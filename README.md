@@ -15,7 +15,7 @@ This is a demo for a contact card webpage, where you can create, edit, delete, a
  1. Go into the project's main folder, and run command:
  ```
     docker-compose up -d  
-    or:
+    // or:
     ./vendor/bin/sail up
 ```
 
