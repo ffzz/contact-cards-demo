@@ -13,5 +13,5 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-// -  GET /contacts  显示所有联系人卡片
+// -  GET /contacts  Show all the contact cards.
 Route::get('/', [ContactController::class, 'index']);

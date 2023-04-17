@@ -18,11 +18,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// -  POST /contacts  保存新创建的联系人卡片
+// -  POST /contacts  Save the newly created contact card.
 Route::post('/contacts', [ContactController::class, 'store']);
 
-// -  PUT /contacts/{id}  更新指定ID的联系人卡片
+// -  PUT /contacts/{id}  update contact card with id.
 Route::put('/contacts/{id}', [ContactController::class, 'update']);
 
-// -  DELETE /contacts/{id}  删除指定ID的联系人卡片
+// -  DELETE /contacts/{id}  Delete the contact card with the specified ID.
 Route::delete('/contacts/{id}', [ContactController::class, 'destroy']);

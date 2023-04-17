@@ -91,13 +91,11 @@
   </div>
 </div>
 
-
-
 <script>
   $('#edit-save').on('click', function(e) {
     e.preventDefault();
-    const name = $('#edit_name').val();
-    const email = $('#edit_email').val();
+    const name = $('#edit_name').val().trim();
+    const email = $('#edit_email').val().trim();
     const id = $('#edit_id').val();
 
     axios(`api/contacts/${id}`, {

@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     /**
-     * 显示所有联系人卡片
+     * Show all the contact cards.
      *
      * @return \Illuminate\View\View
      */
@@ -23,10 +23,10 @@ class ContactController extends Controller
     }
 
     // /**
-    //  * 保存新创建的联系人卡片
+    //  * Save the newly created contact card.
     //  *
     //  * @param  \Illuminate\Http\Request  $request
-    //  * @return \Illuminate\Http\RedirectResponse
+    //  * @return json
     //  */
     public function store(Request $request)
     {
@@ -43,7 +43,7 @@ class ContactController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\RedirectResponse
+     * @return {} json
      */
     public function update(Request $request, $id)
     {
@@ -62,7 +62,7 @@ class ContactController extends Controller
      * 删除指定ID的联系人卡片
      *
      * @param  int  $id
-     * @return \Illuminate\Http\RedirectResponse
+     * @return {} json
      */
     public function destroy($id)
     {

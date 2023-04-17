@@ -37,13 +37,13 @@
     axios('api/contacts', {
       method: 'POST',
       data: {
-        email,
-        name,
+        email: email.trim(),
+        name: name.trim(),
       }
     }).then(res => {
-      $('#contact-list').load(location.href + "#contact-list>*", "");
-      $('#create-contact-form').remove();
-      // window.location.reload()
+      //   $('#contact-list').load(location.href + "#contact-list>*", "");
+      //   $('#create-contact-form').remove();
+      window.location.reload()
       console.log(res)
     }).catch(error => {
       console.log(error)
